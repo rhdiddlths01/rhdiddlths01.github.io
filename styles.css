@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 내비게이션 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul a:hover {
+  color: #0f62fe;
+}
+
+/* 히어로 */
+#hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f4f4f4;
+}
+
+#hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+#hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #0f62fe;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* 공통 섹션 */
+section {
+  padding: 60px 10%;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #0f62fe;
+  padding-left: 12px;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  margin: 16px 0 4px;
+  color: #555;
+}
+
+/* 카드 */
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* 링크 */
+a {
+  color: #0f62fe;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+}
